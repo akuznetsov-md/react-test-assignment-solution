@@ -1,0 +1,35 @@
+.button {
+  border: 0;
+  appearance: none;
+  color: white;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 22px 12px 28px;
+  gap: 8px;
+
+  min-width: 180px;
+  min-height: 48px;
+
+  background: #2f7bff;
+  box-shadow: 0px 8px 24px -4px rgba(47, 123, 255, 0.5);
+  border-radius: 12px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+  transition-property: box-shadow, color;
+}
+
+.button:hover {
+  background: #2f7bff;
+  box-shadow: 0px 8px 24px -4px #2f7bff;
+}
+
+.button:active {
+  background: #0057ff;
+  box-shadow: none;
+}

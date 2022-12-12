@@ -1,0 +1,19 @@
+.login_header {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: rgba(29, 31, 38, 0.8);
+  margin-bottom: 4px;
+}
+
+.login_text {
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  color: rgba(29, 31, 38, 0.8);
+}
+
+.login_form {
+  margin-top: 32px;
+}

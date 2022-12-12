@@ -1,0 +1,60 @@
+.text-input {
+  --text-input-stroke-color: rgba(165, 174, 189, 0.2);
+  --text-input-stroke-width: 1px;
+
+  height: 48px;
+  background: rgba(165, 174, 189, 0.1);
+  box-shadow: 0 0 0 2px var(--text-input-stroke-color);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 12px 12px 16px;
+  position: relative;
+  margin-bottom: 28px;
+  width: 100%;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.text-input:has(.text-input_input:focus) {
+  --text-input-stroke-color: #2f7bff;
+  --text-input-stroke-width: 2px;
+}
+
+.text-input__invalid,
+.text-input__invalid:has(.text-input_input:focus) {
+  --text-input-stroke-color: #ff0044;
+  --text-input-stroke-width: 2px;
+}
+
+.text-input_input {
+  border: 0;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  line-height: 24px;
+  color: rgba(29, 31, 38, 0.8);
+  width: 100%;
+}
+
+.text-input_input::placeholder {
+  color: #a5aebd;
+}
+
+.text-input_helper-text {
+  position: absolute;
+  top: calc(100% + 8px);
+  font-size: 13px;
+  line-height: 20px;
+  height: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  left: 0;
+  color: var(--text-input-color);
+}
+
+.text-input_helper-text__invalid {
+  color: #ff0044;
+}

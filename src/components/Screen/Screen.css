@@ -1,0 +1,29 @@
+.screen {
+  display: grid;
+  grid-auto-flow: row;
+  min-height: 100vh;
+  width: 100%;
+  padding: 6px 32px;
+  align-items: center;
+  max-width: 640px;
+  margin: 0 auto;
+  align-content: space-between;
+  justify-items: center;
+}
+
+.screen_header {
+  margin: 26px 0;
+}
+
+.screen_main {
+  padding: 28px 24px 40px;
+  background: #ffffff;
+  box-shadow: 0px 6px 24px rgba(29, 31, 38, 0.15);
+  border-radius: 20px;
+  width: 100%;
+  margin: 0 32px;
+}
+
+.screen_footer {
+  margin: 26px 0;
+}

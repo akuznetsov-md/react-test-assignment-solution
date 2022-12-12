@@ -1,0 +1,26 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 48px 24px 56px;
+}
+
+.profile_avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: lightgray;
+}
+
+.profile_header {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: rgba(29, 31, 38, 0.8);
+  margin-top: 8px;
+}
+
+.profile_logout-button {
+  margin-top: 20px;
+}
